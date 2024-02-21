@@ -32,7 +32,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/mre',[HomeController::class,'mre'])->name('mre');
     Route::get('/sitereport',[HomeController::class,'sitereport'])->name('sitereport');
     Route::get('/safetyreport',[HomeController::class,'safetyreport'])->name('safetyreport');
-    Route::get('/salesreport',[HomeController::class,'salesreport'])->name('salesreport');
+    Route::get('/salesreport',[HomeController::class,'salesreport'])->name('salesreport');    
     Route::get('/quarry',[HomeController::class,'quarry'])->name('quarry');
     Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
     Route::get('/calendar',[HomeController::class,'calendar'])->name('calendar');

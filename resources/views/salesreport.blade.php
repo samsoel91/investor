@@ -5,20 +5,17 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Report</h1>
-          </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-      <section class="content">
+      <section class="content text-center">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Daily Project Report</h3>
+                <h3 class="card-title">Sales Report</h3>
               </div>
               <!-- /.card-header -->
               <!-- /.card-header -->
@@ -28,86 +25,39 @@
                     <tr>
                       <th style="width: 10px">No</th>
                       <th>Date of Report</th>
-                      <th>Submitted by</th>
+                      <th>Prepared by</th>
                       <th>Approved by</th>
                       <th>action</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($data as $d)
                     <tr>
-                      <td>{{ $loop->iteration }}</td>
-                      <td>{{ $d->name}}</td>
-                      <td>{{ $d->email}}</td>    
-                      <td>Update software</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
-                      </td>
+                      <td>1</td>
+                      <td>18 November 2023</td>
+                      <td>Yan Iryanto</td>
+                      <td>Zainul Arifin</td>
+                      <td><a href="{{ asset('lte/docs/assets/img/Marketing_Sales_Weekly_Report_18_Nov_2023.pdf')}}" target="_blank"><i class="fa fa-eye"></i></a></td>
                     </tr>
-                    @endforeach
                   </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Weekly Project Report</h3>
-              </div>
-              <!-- /.card-header -->
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th style="width: 10px">No</th>
-                      <th>Date of Report</th>
-                      <th>Submitted by</th>
-                      <th>Approved by</th>
-                      <th>action</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    @foreach ($data as $d)
                     <tr>
-                      <td>{{ $loop->iteration }}</td>
-                      <td>{{ $d->name}}</td>
-                      <td>{{ $d->email}}</td>    
-                      <td>Update software</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
-                      </td>
+                      <td>2</td>
+                      <td>25 November 2023</td>
+                      <td>Yan Iryanto</td>
+                      <td>Zainul Arifin</td>
+                      <td>view</td>
                     </tr>
-                    @endforeach
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>3</td>
+                      <td>08 December 2023</td>
+                      <td>Yan Iryanto</td>
+                      <td>Zainul Arifin</td>
+                      <td>view</td>
+                    </tr>
                   </tbody>
                 </table>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
               </div>
             </div>
             <!-- /.card -->

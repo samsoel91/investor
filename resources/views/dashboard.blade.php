@@ -7,6 +7,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Dashboard</h1>
+            <p>Welcome to BK Dashboard</p>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -29,12 +30,12 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>112</h3>
-                <p>Daily Project Report</p>
+                <p>Project Report</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="{{ route('admin.user')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.sitereport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -43,12 +44,12 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>53</h3>
-                <p>Weekly Project report</p>
+                <p>E.S.G report</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.safetyreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -57,12 +58,12 @@
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>44</h3>
-                <p>Daily E.S.G Report</p>
+                <p>Sales Report</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.salesreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -71,7 +72,7 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>65</h3>
-                <p>Weekly E.S.G Report</p>
+                <p>Incident Report</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Daily_site;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,18 +29,11 @@ class HomeController extends Controller
     }
 
     public function sitereport(){
-        $data = Daily_site::get();
-        return view('sitereport',compact('data'));
-    }
-
-    public function safetyreport(){
-        $data = User::get();
-        return view('safetyreport',compact('data'));
+        return view('sitereport');
     }
 
     public function salesreport(){
-        $data = User::get();
-        return view('salesreport',compact('data'));
+        return view('salesreport');
     }
 
     public function quarry(){

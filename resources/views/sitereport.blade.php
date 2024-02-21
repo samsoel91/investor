@@ -12,7 +12,7 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-      <section class="content">
+      <section class="content text-center">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -23,30 +23,86 @@
               <!-- /.card-header -->
               <!-- /.card-header -->
               <div class="card-body">
-                <table class="table table-bordered">
+                <table class="table table-bordered" text-align="center">
                   <thead>
                     <tr>
                       <th style="width: 10px">No</th>
                       <th>Date of Report</th>
                       <th>Submitted by</th>
                       <th>Approved by</th>
-                      <th>action</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($data as $d)
                     <tr>
-                      <td>{{ $loop->iteration }}</td>
-                      <td>{{ $d->name}}</td>
-                      <td>{{ $d->email}}</td>    
-                      <td>Update software</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                      <td>1</td>
+                      <td>2 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/BKN - KBK Malinau Project Daily Report 02 Jan 2024.pdf') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
                         </div>
-                      </td>
+                      </div>
+                    </td>
                     </tr>
-                    @endforeach
+                    <tr>
+                      <td>1</td>
+                      <td>3 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/KBK20Summary20(Equity202023.pdf') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>4 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/KBK20Summary20(Equity202023.pdf') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -61,9 +117,8 @@
                 </ul>
               </div>
             </div>
-            <!-- /.card -->
           </div>
-          <!-- /.col -->
+
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
@@ -72,30 +127,86 @@
               <!-- /.card-header -->
               <!-- /.card-header -->
               <div class="card-body">
-                <table class="table table-bordered">
+                <table class="table table-bordered" text-align="center">
                   <thead>
                     <tr>
                       <th style="width: 10px">No</th>
                       <th>Date of Report</th>
                       <th>Submitted by</th>
                       <th>Approved by</th>
-                      <th>action</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($data as $d)
                     <tr>
-                      <td>{{ $loop->iteration }}</td>
-                      <td>{{ $d->name}}</td>
-                      <td>{{ $d->email}}</td>    
-                      <td>Update software</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                      <td>1</td>
+                      <td>2 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/public/lte/docs/assets/img/KBK DAILY HEALTH AND SAFETY REPORT 02 Jan 2024.pdff') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
                         </div>
-                      </td>
+                      </div>
+                    </td>
                     </tr>
-                    @endforeach
+                    <tr>
+                      <td>1</td>
+                      <td>3 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/KBK20Summary20(Equity202023.pdf') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>4 January 2023</td>
+                      <td>Bukhari</td>
+                      <td>Givi Andriyanto</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div style="text-align: center;">
+                              <iframe src="{{ asset('lte/docs/assets/img/KBK20Summary20(Equity202023.pdf') }}" style="width:470px; height:500px;" frameborder="0"></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -110,12 +221,9 @@
                 </ul>
               </div>
             </div>
-            <!-- /.card -->
           </div>
-          <!-- /.col -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 </div>
 @endsection
