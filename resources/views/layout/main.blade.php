@@ -75,11 +75,6 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{ route('logout') }}" class="nav-link">Logout</a>
       </li>
@@ -257,7 +252,7 @@
   @yield('content')
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    Copyright &copy; 2016-2024 <strong>Kaltara Batu Konstruksi</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.2.0
@@ -304,5 +299,25 @@
 <script src="{{ Asset('lte/dist/js/adminlte.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ Asset('lte/dist/js/pages/dashboard.js') }}"></script>
+<script language="JavaScript">
+  $(document).ready(function() {
+  var url = window.location;
+
+// for sidebar menu entirely but not cover treeview
+$('ul.nav-sidebar a').filter(function() {
+    if (this.href) {
+        return this.href == url || url.href.indexOf(this.href) == 0;
+    }
+}).addClass('active');
+
+// for the treeview
+$('ul.nav-treeview a').filter(function() {
+    if (this.href) {
+        return this.href == url || url.href.indexOf(this.href) == 0;
+    }
+}).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
+  })
+
+</script>
 </body>
 </html>

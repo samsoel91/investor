@@ -7,12 +7,12 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Dashboard</h1>
-            <p>Welcome to BK Dashboard</p>
+            <p>Welcome to KBK Dashboard</p>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -32,9 +32,6 @@
                 <h3>112</h3>
                 <p>Project Report</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
               <a href="{{ route('admin.sitereport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -45,9 +42,6 @@
               <div class="inner">
                 <h3>53</h3>
                 <p>E.S.G report</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
               </div>
               <a href="{{ route('admin.safetyreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -60,9 +54,6 @@
                 <h3>44</h3>
                 <p>Sales Report</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
               <a href="{{ route('admin.salesreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -73,9 +64,6 @@
               <div class="inner">
                 <h3>65</h3>
                 <p>Incident Report</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
