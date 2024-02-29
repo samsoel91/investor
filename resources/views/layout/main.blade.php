@@ -218,12 +218,6 @@
                   <p>Port 3D</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="https://kbkquarry.com/portal/gis/#8/3.559/116.990" class="nav-link" target="_blank">
-                  <i class="nav-icon far fa-circle text-warning"></i>
-                  <p>GIS Mapping</p>
-                </a>
-              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -231,6 +225,14 @@
               <i class="nav-icon far fa-image"></i>
               <p>
                 Gallery
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('admin.user') }}" class="nav-link">
+              <i class="nav-icon far fa-user"></i>
+              <p>
+                User
               </p>
             </a>
           </li>
@@ -255,7 +257,7 @@
     Copyright &copy; 2016-2024 <strong>Kaltara Batu Konstruksi</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
+      <b>Version</b> 1.2.0
     </div>
   </footer>
 

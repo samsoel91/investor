@@ -20,7 +20,7 @@ use App\Http\Controllers\LoginController;
 // Route::get('/', function () {
 //    return view('dashboard');
 // });
-Route::get('/login',[LoginController::class,'index'])->name('login');
+Route::get('/',[LoginController::class,'index'])->name('login');
 Route::post('/login-proses',[LoginController::class,'login_proses'])->name('login-proses');
 Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 Route::get('/register',[LoginController::class,'register'])->name('register');
@@ -37,9 +37,9 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/salesreport',[HomeController::class,'salesreport'])->name('salesreport');    
     Route::get('/quarry',[HomeController::class,'quarry'])->name('quarry');
     Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
-    Route::get('/calendar',[HomeController::class,'calendar'])->name('calendar');
-
     Route::get('/user',[HomeController::class,'user'])->name('user');
+    Route::get('/create',[HomeController::class,'create'])->name('user.create');
+    Route::post('/storeuser',[HomeController::class,'storeuser'])->name('storeuser');
 });
 
 
