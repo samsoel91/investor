@@ -46,10 +46,37 @@
                       <td>{{ $d->name}}</td>
                       <td>{{ $d->email}}</td>
                       <td>
-                        <a href="" class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
-                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                        <a href="{{ route('admin.edituser',['id' => $d->id]) }}" class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
+                        <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
                       </td>
                     </tr>
+                    <div class="modal fade" id="modal-delete{{ $d->id}}">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Delete User?</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Are you sure you want to delete <b>{{$d->name}}</b> from KBK Investor Dashboard User?</p>
+                          </div>
+                          
+                            <form action="{{ route('admin.deleteuser',['id'=>$d->id]) }}" method="POST">
+                              @csrf
+                              @method('DELETE')
+                              <div class="modal-footer justify-content-between">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Yes</button>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- /.modal-content -->
+                      </div>
+                      <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
                     @endforeach
                   </tbody>
                 </table>

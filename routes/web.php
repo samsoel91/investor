@@ -40,6 +40,9 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/user',[HomeController::class,'user'])->name('user');
     Route::get('/create',[HomeController::class,'create'])->name('user.create');
     Route::post('/storeuser',[HomeController::class,'storeuser'])->name('storeuser');
+    Route::get('/edituser/{id}',[HomeController::class,'edituser'])->name('edituser');
+    Route::put('/updateuser/{id}',[HomeController::class,'updateuser'])->name('updateuser');
+    Route::delete('/deleteuser/{id}',[HomeController::class,'deleteuser'])->name('deleteuser');
 });
 
 
