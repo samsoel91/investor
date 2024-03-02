@@ -4,7 +4,6 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DocumentController;
-use App\Models\Document;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +40,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::delete('/deleteuser/{id}',[HomeController::class,'deleteuser'])->name('deleteuser');
     Route::get('/document',[DocumentController::class,'document'])->name('document');
     Route::get('/createdocument',[DocumentController::class,'createdocument'])->name('document.create');
+    Route::post('/storedocument',[DocumentController::class,'storedocument'])->name('storedocument');
 });
 
 

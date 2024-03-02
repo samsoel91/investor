@@ -24,21 +24,23 @@ class DocumentController extends Controller
     public function storedocument(Request $request){
         $validator = Validator::make($request->all(),[
             'namefile' => 'required',
-            'date'  => 'required',
-            'file' => 'required|mimes:pdf|max:2048',
+            'date' => 'required|email',
+            'file'  => 'required|mimes:pdf|max:2048',
         ]);
         if ($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
 
         $file      = $request->file('file');
-        $filename   = date('Y-m-d');
-        $path       = 'document-file/'.$filename;
+        $filename   = date('Y-m-d').$file;
+        $path       = 'doc-user/'.$filename;
         Storage::disk('public')->put($path,file_get_contents($file));
 
-        $data['namefile']       = $request->namefile;
-        $data['date']           = $request->date;
-        $data['image']          = $filename;  
+        $data['namefile']      = $request->namefile;
+        $data['date']       = $request->date;
+        $data['file']      = $filename;  
         Document::create($data);
         return redirect()->route('admin.document');
 
     }
+
+
 }

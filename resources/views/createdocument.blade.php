@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Add User</h1>
+            <h1 class="m-0">Add Document</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -36,22 +36,22 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Document Name</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
-                      @error('email')
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="namefile" placeholder="Enter Document name">
+                      @error('namefile')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Date</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter Name">
-                      @error('name')
+                      <input type="date" class="form-control" id="exampleInputEmail1" name="date" placeholder="Enter Date">
+                      @error('date')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Upload</label>
-                      <input type="file" class="form-control" id="exampleInputEmail1" name="photo">
-                      @error('photo')
+                      <input type="file" class="form-control" id="exampleInputEmail1" name="file">
+                      @error('file')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
