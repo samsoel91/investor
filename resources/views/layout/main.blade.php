@@ -37,7 +37,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="https://kbkquarry.com/" class="nav-link">Home</a>
+        <a href="{{ route('admin.dashboard') }}" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="https://kbkquarry.com/contact.html" class="nav-link">Contact</a>
@@ -117,53 +117,6 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Company
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('admin.exsum') }}" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Executive Summary</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.tenement') }}" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Tenement Report</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Shareholders Reports</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.mre') }}" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p><small>Mineral Resources Estimate</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Asset Technical Valuation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="nav-icon far fa-circle text-danger"></i>
-                  <p><small>Technical Economical Model</small></p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Report
@@ -190,6 +143,14 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('admin.document') }}" class="nav-link">
+              <i class="nav-icon far fa-file"></i>
+              <p>
+                Document
+              </p>
+            </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">

@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item active">User</li>
             </ol>
           </div>
         </div>
@@ -27,6 +27,19 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Form Add User</h3>
+
+                <div class="card-tools">
+                  <form action="{{ route ('admin.user') }}" method="GET">
+                      <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="search" class="form-control float-right" placeholder="Search" value="{{ $request->get('search') }}">
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
+                      </div>
+                  </div>
+                  </form>
+                </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

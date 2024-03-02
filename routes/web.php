@@ -3,8 +3,8 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-
-
+use App\Http\Controllers\DocumentController;
+use App\Models\Document;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +28,6 @@ Route::post('/register-proses',[LoginController::class,'register_proses'])->name
 
 Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], function(){
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard');
-    Route::get('/exsum',[HomeController::class,'exsum'])->name('exsum');
-    Route::get('/tenement',[HomeController::class,'tenement'])->name('tenement');
-    Route::get('/shareholder',[HomeController::class,'shareholder'])->name('shareholder');
-    Route::get('/mre',[HomeController::class,'mre'])->name('mre');
     Route::get('/sitereport',[HomeController::class,'sitereport'])->name('sitereport');
     Route::get('/safetyreport',[HomeController::class,'safetyreport'])->name('safetyreport');
     Route::get('/salesreport',[HomeController::class,'salesreport'])->name('salesreport');    
@@ -43,6 +39,8 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/edituser/{id}',[HomeController::class,'edituser'])->name('edituser');
     Route::put('/updateuser/{id}',[HomeController::class,'updateuser'])->name('updateuser');
     Route::delete('/deleteuser/{id}',[HomeController::class,'deleteuser'])->name('deleteuser');
+    Route::get('/document',[DocumentController::class,'document'])->name('document');
+    Route::get('/createdocument',[DocumentController::class,'createdocument'])->name('document.create');
 });
 
 

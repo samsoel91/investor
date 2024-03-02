@@ -21,44 +21,37 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <form action="{{ route('admin.storeuser') }}" method="POST"  enctype="multipart/form-data">
+        <form action="{{ route('admin.storedocument') }}" method="POST"  enctype="multipart/form-data">
           @csrf
           <div class="row">
             <div class="col-md-6">
               <!-- general form elements -->
               <div class="card card-primary">
                 <div class="card-header">
-                  <h3 class="card-title">Form Add User</h3>
+                  <h3 class="card-title">Form Add Document</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
                 <form>
                   <div class="card-body">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Photo Profile</label>
-                      <input type="file" class="form-control" id="exampleInputEmail1" name="photo">
-                      @error('photo')
-                        <small>{{ $message }}</small>
-                      @enderror
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email Address</label>
+                      <label for="exampleInputEmail1">Document Name</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
                       @error('email')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Full Name</label>
+                      <label for="exampleInputEmail1">Date</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter Name">
                       @error('name')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
-                      @error('password')
+                      <label for="exampleInputEmail1">Upload</label>
+                      <input type="file" class="form-control" id="exampleInputEmail1" name="photo">
+                      @error('photo')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>
