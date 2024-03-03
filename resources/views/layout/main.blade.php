@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="{{ Asset('lte/plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ Asset('lte/plugins/summernote/summernote-bs4.min.css') }}">
+  @yield('css')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -125,15 +126,27 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('admin.sitereport') }}" class="nav-link">
+                <a href="{{ route('admin.dailysite') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Site Reports</p>
+                  <p>Daily Site Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.weeklysite') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Weekly Site Reports</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('admin.safetyreport') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Safety Reports</p>
+                  <p>Daily Safety Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.safetyreport') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Weekly Safety Reports</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -282,5 +295,6 @@ $('ul.nav-treeview a').filter(function() {
   })
 
 </script>
+@yield('script')
 </body>
 </html>

@@ -1,4 +1,7 @@
 @extends('layout.main')
+@section('css')
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css" />
+@endsection
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -27,23 +30,10 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Form Add User</h3>
-
-                <div class="card-tools">
-                  <form action="{{ route ('admin.user') }}" method="GET">
-                      <div class="input-group input-group-sm" style="width: 150px;">
-                        <input type="text" name="search" class="form-control float-right" placeholder="Search" value="{{ $request->get('search') }}">
-                        <div class="input-group-append">
-                          <button type="submit" class="btn btn-default">
-                            <i class="fas fa-search"></i>
-                          </button>
-                      </div>
-                  </div>
-                  </form>
-                </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <table class="table table-bordered">
+                <table class="table table-bordered text-center" id="usertable">
                   <thead>
                     <tr class="text-center">
                       <th style="width: 10px">NO</th>
@@ -94,21 +84,18 @@
                   </tbody>
                 </table>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.card -->
         </div>
     </div>
     </section>
     <!-- /.content -->
   </div>
+@endsection
+
+@section('script')
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <script>
+      $(document).ready( function () {
+      $('#usertable').DataTable();
+      } );
+  </script>
 @endsection

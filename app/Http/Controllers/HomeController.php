@@ -16,26 +16,6 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
-    public function exsum(){
-        return view('exsum');
-    }
-
-    public function tenement(){
-        return view('tenement');
-    }
-
-    public function shareholder(){
-        return view('shareholder');
-    }
-
-    public function mre(){
-        return view('mre');
-    }
-
-    public function sitereport(){
-        return view('sitereport');
-    }
-
     public function salesreport(){
         return view('salesreport');
     }
@@ -46,10 +26,6 @@ class HomeController extends Controller
 
     public function gallery(){
         return view('gallery'); 
-    }
-
-    public function calendar(){
-        return view('calendar');
     }
 
     public function user(Request $request){
@@ -68,22 +44,15 @@ class HomeController extends Controller
 
     public function storeuser(Request $request){
         $validator = Validator::make($request->all(),[
-            'photo' => 'required|mimes:png,jpg,jpeg|max:2048',
             'email' => 'required|email',
             'name'  => 'required',
             'password'  => 'required',
         ]);
         if ($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
 
-        $photo      = $request->file('photo');
-        $filename   = date('Y-m-d').$photo->getClientOriginalName();
-        $path       = 'photo-user/'.$filename;
-        Storage::disk('public')->put($path,file_get_contents($photo));
-
         $data['email']      = $request->email;
         $data['name']       = $request->name;
-        $data['password']   = Hash::make($request->password);
-        $data['image']      = $filename;  
+        $data['password']   = Hash::make($request->password); 
         User::create($data);
         return redirect()->route('admin.user');
 

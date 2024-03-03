@@ -30,9 +30,9 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>112</h3>
-                <p>Project Report</p>
+                <p>Site Report</p>
               </div>
-              <a href="{{ route('admin.sitereport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.dailysite')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -63,9 +63,9 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>65</h3>
-                <p>Incident Report</p>
+                <p>Document</p>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.document') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>

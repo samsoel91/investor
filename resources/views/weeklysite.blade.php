@@ -9,36 +9,30 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Documents</h1>
+            <h1 class="m-0">Report</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-              <li class="breadcrumb-item active">Documents</li>
-            </ol>
-          </div>
-        </div>
-      </div>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-    <!-- Main content -->
-    <section class="content text-left">
-    <div class="container-fluid">
+      <section class="content text-center">
+      <div class="container-fluid">
         <div class="row">
-        <div class="col-md-12">
-        <a href="{{ route('admin.document.create')}}" class="btn btn-primary mb-3 text-left">Add Document</a>
-        <div class="card">
+          <div class="col-md-12">
+            <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Document List</h3>
+                <h3 class="card-title">Daily Project Report</h3>
               </div>
               <!-- /.card-header -->
-              <div class="card-body p-0">
-                <table class="table table-striped text-center" id="documenttable">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered text-center" id="documenttable">
                   <thead>
-                    <tr class="text-center">
-                      <th>No</th>
-                      <th>Document Name</th>
+                    <tr>
+                      <th style="width: 10px">No</th>
                       <th>Date</th>
+                      <th>Submitted by</th>
+                      <th>Approved by</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -46,26 +40,21 @@
                     @foreach ($data as $d)
                     <tr>
                       <td>{{ $loop->iteration }}</td>
-                      <td>{{ $d->namefile }}</td>
                       <td>{{ $d->date }}</td>
-                      <td>{{ $d->file }}
-                          <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
-                      </td>
+                      <td>{{ $d->submitted }}</td>
+                      <td>{{ $d->sign }}</td>
+                      <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">view</button></td>
                     </tr>
                     @endforeach
                   </tbody>
                 </table>
               </div>
-              <!-- /.card-body -->
             </div>
+          </div>
         </div>
-        </div>
-        <!-- /.content -->
-    </div>
+      </div>
     </section>
-
-
-  </div>
+</div>
 @endsection
 @section('script')
   <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
