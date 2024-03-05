@@ -44,7 +44,7 @@
                       <td>{{ $d->submitted }}</td>
                       <td>{{ $d->sign }}</td>
                       <td>
-                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><i class="fas fa-eye"></i></button>
+                        <a href="{{ asset('storage/doc-dailysite/'.$d->file)}}" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i>
                         <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                       </td>
                     </tr>

@@ -33,7 +33,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body p-0">
-                <table class="table table-striped text-center" id="documenttable">
+                <table class="table table-striped text-center" id="">
                   <thead>
                     <tr class="text-center">
                       <th>No</th>
@@ -48,8 +48,8 @@
                       <td>{{ $loop->iteration }}</td>
                       <td>{{ $d->namefile }}</td>
                       <td>{{ $d->date }}</td>
-                      <td>{{ $d->file }}
-                          <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                      <td>
+                        <a href="{{ asset('storage/doc-user/'.$d->file)}}" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i></a>
                       </td>
                     </tr>
                     @endforeach
