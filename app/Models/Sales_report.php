@@ -16,8 +16,8 @@ class Sales_report extends Model
      */
     protected $fillable = [
         'date',
-        'submitted',
-        'sign',
+        'prepared',
+        'approved',
         'file',
     ];
 }

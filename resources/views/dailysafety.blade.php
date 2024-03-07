@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Daily Site Report</h1>
+            <h1 class="m-0">Daily Safety Report</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -19,10 +19,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-          <a href="{{ route('admin.dailysitecreate')}}" class="btn btn-primary mb-3 text-left">Add Report</a>
+          <a href="{{ route('admin.dailysafetycreate')}}" class="btn btn-primary mb-3 text-left">Add Report</a>
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">List Daily Site Report</h3>
+                <h3 class="card-title">List Daily Safety Report</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="modal-body">
                                   <div style="text-align: center;">
-                                    <iframe src="{{ asset('storage/doc-dailysite/'.$d->file)}}" style="width:100%; height:600px;" frameborder="0"></iframe>
+                                    <iframe src="{{ asset('storage/doc-dailysafety/'.$d->file)}}" style="width:100%; height:600px;" frameborder="0"></iframe>
                                   </div>
                                 </div>
                                 <div class="modal-footer justify-content-between">
@@ -84,7 +84,7 @@
                                 <p>Are you sure you want to delete report date <b>{{$d->date}}</b>?</p>
                               </div>
                               
-                                <form action="{{ route('admin.dailysitedelete',['id'=>$d->id]) }}" method="POST">
+                                <form action="{{ route('admin.dailysafetydelete',['id'=>$d->id]) }}" method="POST">
                                   @csrf
                                   @method('DELETE')
                                   <div class="modal-footer justify-content-between">

@@ -88,7 +88,7 @@
     <!-- Brand Logo -->
     <a href="{{ route('admin.dashboard') }}" class="brand-link">
       <img src="{{ asset('lte/dist/img/logo-v1.png') }}" alt="KBK Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Kaltara Batu Konstruksi</span>
+      <span class="brand-text font-weight-light">PT KBK </span>
     </a>
 
     <!-- Sidebar -->
@@ -138,13 +138,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('admin.safetyreport') }}" class="nav-link">
+                <a href="{{ route('admin.dailysafety') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
                   <p>Daily Safety Reports</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('admin.safetyreport') }}" class="nav-link">
+                <a href="{{ route('admin.weeklysafety') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
                   <p>Weekly Safety Reports</p>
                 </a>
@@ -153,6 +153,18 @@
                 <a href="{{ route('admin.salesreport') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
                   <p>Sales Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Shareholders Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Tenement Report</p>
                 </a>
               </li>
             </ul>
@@ -164,6 +176,86 @@
                 Document
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('admin.dailysite') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Executive Summary</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.weeklysite') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p><small>Mineral Resources Estimate</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.dailysafety') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p><small>Asset Technical Valuation</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.weeklysafety') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p><small>Technical Economical Model</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.salesreport') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Mine Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Cost Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Block Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Port Visualization</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Layout 3D</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Buyer LOI & MOU</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>KBK Audited Financials</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p><small>OZINDO Audited Financials</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>KBK Constitution</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">

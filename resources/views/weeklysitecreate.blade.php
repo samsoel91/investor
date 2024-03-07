@@ -21,7 +21,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <form action="{{ route('admin.dailysitestore') }}" method="POST"  enctype="multipart/form-data">
+        <form action="{{ route('admin.weeklysitestore') }}" method="POST"  enctype="multipart/form-data">
           @csrf
           <div class="row">
             <div class="col-md-6">

@@ -2,23 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Weekly_site;
+use App\Models\Daily_safety;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 
-class WeeklysiteController extends Controller
+class DailysafetyController extends Controller
 {
-    public function weeklysite(){
-        $data = Weekly_site::get();
-        return view('weeklysite',compact('data'));
+    public function dailysafety(){
+        $data = Daily_safety::get();
+        return view('dailysafety',compact('data'));
     }
 
-    public function weeklysitecreate(){
-        return view ('weeklysitecreate');
+    public function dailysafetycreate(){
+        return view ('dailysafetycreate');
     }
 
-    public function weeklysitestore(Request $request){
+    public function dailysafetystore(Request $request){
         $validator = Validator::make($request->all(),[
             'date'      => 'required',
             'submitted' => 'required',
@@ -29,7 +29,7 @@ class WeeklysiteController extends Controller
 
         $file       = $request->file('file');
         $filename   = date('Y-m-d-s');
-        $path       = 'doc-weeklysite/'.$filename;
+        $path       = 'doc-dailysafety/'.$filename;
         Storage::disk('public')->put($path,file_get_contents($file));
 
         $data['date']       = $request->date;
@@ -37,15 +37,15 @@ class WeeklysiteController extends Controller
         $data['sign']       = $request->sign;
         $data['file']       = $filename;
 
-        Weekly_site::create($data);
-        return redirect()->route('admin.weeklysite');
+        daily_safety::create($data);
+        return redirect()->route('admin.dailysafety');
     }
 
-    public function weeklysitedelete(Request $request,$id){
-        $data = Weekly_site::find($id);
+    public function dailysafetydelete(Request $request,$id){
+        $data = daily_safety::find($id);
         if($data){
             $data->delete();
         }
-        return redirect()->route('admin.weeklysite');
+        return redirect()->route('admin.dailysafety');
     }
 }

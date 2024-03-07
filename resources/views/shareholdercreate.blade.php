@@ -21,7 +21,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <form action="{{ route('admin.dailysitestore') }}" method="POST"  enctype="multipart/form-data">
+        <form action="{{ route('admin.shareholderstore') }}" method="POST"  enctype="multipart/form-data">
           @csrf
           <div class="row">
             <div class="col-md-6">
@@ -35,23 +35,16 @@
                 <form>
                   <div class="card-body">
                     <div class="form-group">
+                      <label for="exampleInputEmail1">Document Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="namefile" placeholder="Enter Document name">
+                      @error('namefile')
+                        <small>{{ $message }}</small>
+                      @enderror
+                    </div>
+                    <div class="form-group">
                       <label for="exampleInputEmail1">Date</label>
                       <input type="date" class="form-control" id="exampleInputEmail1" name="date" placeholder="Enter Date">
                       @error('date')
-                        <small>{{ $message }}</small>
-                      @enderror
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Submitted By</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="submitted" placeholder="Enter Document name">
-                      @error('submitted')
-                        <small>{{ $message }}</small>
-                      @enderror
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Sign By</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="sign" placeholder="Enter Document name">
-                      @error('sign')
                         <small>{{ $message }}</small>
                       @enderror
                     </div>

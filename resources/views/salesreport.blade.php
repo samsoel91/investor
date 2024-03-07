@@ -1,71 +1,127 @@
 @extends('layout.main')
+@section('css')
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css" />
+@endsection
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Sales Report</h1>
+          </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-      <section class="content text-center">
+      <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
+          <a href="{{ route('admin.salesreportcreate')}}" class="btn btn-primary mb-3 text-left">Add Report</a>
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Sales Report</h3>
+                <h3 class="card-title">List Sales Report</h3>
               </div>
-              <!-- /.card-header -->
               <!-- /.card-header -->
               <div class="card-body">
-                <table class="table table-bordered">
+                <table id="documenttable" class="table table-bordered table-striped text-center">
                   <thead>
-                    <tr>
-                      <th style="width: 10px">No</th>
-                      <th>Date of Report</th>
-                      <th>Prepared by</th>
-                      <th>Approved by</th>
-                      <th>action</th>
-                    </tr>
+                  <tr>
+                    <th>No</th>
+                    <th>Date</th>
+                    <th>Prepared By</th>
+                    <th>Approved By</th>
+                    <th>Action</th>
+                  </tr>
                   </thead>
                   <tbody>
+                  @foreach ($data as $k=>$d)
                     <tr>
-                      <td>1</td>
-                      <td>18 November 2023</td>
-                      <td>Yan Iryanto</td>
-                      <td>Zainul Arifin</td>
-                      <td><a href="{{ asset('lte/docs/assets/img/Marketing_Sales_Weekly_Report_18_Nov_2023.pdf')}}" target="_blank"><i class="fa fa-eye"></i></a></td>
+                      <td>{{ $loop->iteration }}</td>
+                      <td>{{ $d->date }}</td>
+                      <td>{{ $d->prepared }}</td>
+                      <td>{{ $d->approved }}</td>
+                      <td>
+                        <button id="mymodal{{ $k }}" class="btn btn-primary" data-toggle="modal" data-target="#mymodal{{ $k }}"><i class="fas fa-eye"></i></button>
+                        <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                      </td>
                     </tr>
+                            <div class="modal fade" id="mymodal{{ $k }}">
+                            <div class="modal-dialog modal-xl">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Report Date {{ $d->date }}</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div style="text-align: center;">
+                                    <iframe src="{{ asset('storage/doc-salesreport/'.$d->file)}}" style="width:100%; height:600px;" frameborder="0"></iframe>
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                          </div>
+                          <!-- /.modal -->
+                          <div class="modal fade" id="modal-delete{{ $d->id}}">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Delete User?</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Are you sure you want to delete report date <b>{{$d->date}}</b>?</p>
+                              </div>
+                              
+                                <form action="{{ route('admin.salesreportdelete',['id'=>$d->id]) }}" method="POST">
+                                  @csrf
+                                  @method('DELETE')
+                                  <div class="modal-footer justify-content-between">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary">Yes</button>
+                                </form>
+                              </div>
+                            </div>
+                            <!-- /.modal-content -->
+                          </div>
+                          <!-- /.modal-dialog -->
+                    @endforeach
                   </tbody>
-                  <tbody>
-                    <tr>
-                      <td>2</td>
-                      <td>25 November 2023</td>
-                      <td>Yan Iryanto</td>
-                      <td>Zainul Arifin</td>
-                      <td>view</td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td>3</td>
-                      <td>08 December 2023</td>
-                      <td>Yan Iryanto</td>
-                      <td>Zainul Arifin</td>
-                      <td>view</td>
-                    </tr>
-                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>No</th>
+                    <th>Date</th>
+                    <th>Prepared By</th>
+                    <th>Approved By</th>
+                    <th>Action</th>
+                  </tr>
+                  </tfoot>
                 </table>
               </div>
+              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+            </div>
           </div>
-          <!-- /.col -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
+      </section>
 </div>
+@endsection
+@section('script')
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <script>
+      $(document).ready( function () {
+      $('#documenttable').DataTable();
+      } );
+  </script>
 @endsection

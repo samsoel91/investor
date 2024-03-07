@@ -43,7 +43,7 @@
                 <h3>53</h3>
                 <p>E.S.G report</p>
               </div>
-              <a href="{{ route('admin.safetyreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.dailysafety')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

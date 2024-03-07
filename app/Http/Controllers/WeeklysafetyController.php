@@ -2,23 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Weekly_site;
+use App\Models\Weekly_safety;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 
-class WeeklysiteController extends Controller
+class WeeklysafetyController extends Controller
 {
-    public function weeklysite(){
-        $data = Weekly_site::get();
-        return view('weeklysite',compact('data'));
+    public function weeklysafety(){
+        $data = Weekly_safety::get();
+        return view('weeklysafety',compact('data'));
     }
 
-    public function weeklysitecreate(){
-        return view ('weeklysitecreate');
+    public function weeklysafetycreate(){
+        return view ('weeklysafetycreate');
     }
 
-    public function weeklysitestore(Request $request){
+    public function weeklysafetystore(Request $request){
         $validator = Validator::make($request->all(),[
             'date'      => 'required',
             'submitted' => 'required',
@@ -29,7 +29,7 @@ class WeeklysiteController extends Controller
 
         $file       = $request->file('file');
         $filename   = date('Y-m-d-s');
-        $path       = 'doc-weeklysite/'.$filename;
+        $path       = 'doc-weeklysafety/'.$filename;
         Storage::disk('public')->put($path,file_get_contents($file));
 
         $data['date']       = $request->date;
@@ -37,15 +37,15 @@ class WeeklysiteController extends Controller
         $data['sign']       = $request->sign;
         $data['file']       = $filename;
 
-        Weekly_site::create($data);
-        return redirect()->route('admin.weeklysite');
+        Weekly_safety::create($data);
+        return redirect()->route('admin.weeklysafety');
     }
 
-    public function weeklysitedelete(Request $request,$id){
-        $data = Weekly_site::find($id);
+    public function weeklysafetydelete(Request $request,$id){
+        $data = Weekly_safety::find($id);
         if($data){
             $data->delete();
         }
-        return redirect()->route('admin.weeklysite');
+        return redirect()->route('admin.weeklysafety');
     }
 }
