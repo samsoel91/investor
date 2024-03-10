@@ -98,4 +98,52 @@ class HomeController extends Controller
         $data = User::get();
         return view('index',compact('data'));
     }
+
+    public function tenement(){
+        return view('tenement');
+    }
+
+    public function exsum(){
+        return view('exsum');
+    }
+
+    public function mre(){
+        return view('mre');
+    }
+
+    public function atv(){
+        return view('atv');
+    }
+
+    public function mine(){
+        return view('mine');
+    }
+
+    public function cost(){
+        return view('cost');
+    }
+
+    public function port(){
+        return view('port');
+    }
+
+    public function layout(){
+        return view('layout');
+    }
+
+    public function buyer(){
+        return view('buyer');
+    }
+
+    public function kbkaudit(){
+        return view('kbkaudit');
+    }
+
+    public function ozindoaudit(){
+        return view('ozindoaudit');
+    }
+
+    public function consti(){
+        return view('consti');
+    }
 }

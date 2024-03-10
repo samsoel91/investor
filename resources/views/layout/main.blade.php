@@ -99,7 +99,7 @@
           <img src="{{ asset('lte/dist/img/avatar5.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Samsul Arifin</a>
+          <a href="#" class="d-block">{{ Auth::user()->name }}</a>
         </div>
       </div>
 
@@ -162,7 +162,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
+                <a href="{{ route('admin.tenement') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
                   <p>Tenement Report</p>
                 </a>
@@ -170,118 +170,102 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{ route('admin.document') }}" class="nav-link">
-              <i class="nav-icon far fa-file"></i>
-              <p>
-                Document
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('admin.dailysite') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Executive Summary</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.weeklysite') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p><small>Mineral Resources Estimate</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.dailysafety') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p><small>Asset Technical Valuation</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.weeklysafety') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p><small>Technical Economical Model</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.salesreport') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Mine Model</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Cost Model</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Block Model</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Port Visualization</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Layout 3D</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>Buyer LOI & MOU</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>KBK Audited Financials</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p><small>OZINDO Audited Financials</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('admin.shareholder') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon text-info"></i>
-                  <p>KBK Constitution</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Design
+                Company
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('admin.quarry')}}" class="nav-link">
-                  <i class="nav-icon far fa-circle text-warning"></i>
-                  <p>Quarry 3D</p>
+                <a href="{{ route('admin.exsum') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Executive Summary</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="nav-icon far fa-circle text-warning"></i>
-                  <p>Hub 3D</p>
+                <a href="{{ route('admin.mre') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p><small>Mineral Resources Estimate</small></p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
-                  <i class="nav-icon far fa-circle text-warning"></i>
-                  <p>Port 3D</p>
+                <a href="{{ route('admin.atv') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p><small>Asset Technical Valuation</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://peakglobalid-my.sharepoint.com/:x:/g/personal/samsul_arifin_peakglobal_com/ESqAZOsFqzdDlarH5Dul8xkBxEat92LwnDEcNkU1pUGlsg?e=TVkofD" target="_blank" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p><small>Technical Economical Model</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.mine') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Mine Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.cost') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Cost Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FCost%20Model%2FPIT%20DESIGN%5F24082021%5FSRK%5FOPTI%5FMODEL%5FIND%5FINF%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FCost%20Model" target="_blank"class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Block Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.port') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Port Visualization</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.layout') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Layout 3D</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.buyer') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Buyer LOI & MOU</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2F03%2E%20KBK%20PERMITS%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private&ga=1" target="_blank"class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>Mining Permit</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FESG%20CSR%20PT%20Kaltara%20Batu%20Konstruksi%20%28EN%29%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private&ga=1" target="_blank"class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>ESG-CSR 2021-2022</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.kbkaudit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>KBK Audited Financials</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.ozindoaudit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p><small>OZINDO Audited Financials</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.consti') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-warning"></i>
+                  <p>KBK Constitution</p>
                 </a>
               </li>
             </ul>

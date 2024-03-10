@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="card-body">
-        <iframe src="{{ asset('lte/dist/img/file/U7285 KBK MRE 2021_v1.0.pdf') }}" style="width:1200px; height:1500px;" frameborder="0"></iframe>
+        <iframe src="{{ asset('lte/dist/img/file/U7285 KBK MRE 2021_v1.0.pdf') }}" style="width:100%; height:700px;" frameborder="0"></iframe>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">

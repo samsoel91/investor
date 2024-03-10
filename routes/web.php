@@ -37,6 +37,18 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard');  
     Route::get('/quarry',[HomeController::class,'quarry'])->name('quarry');
     Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
+    Route::get('/tenement',[HomeController::class,'tenement'])->name('tenement');
+    Route::get('/exsum',[HomeController::class,'exsum'])->name('exsum');
+    Route::get('/mre',[HomeController::class,'mre'])->name('mre');
+    Route::get('/atv',[HomeController::class,'atv'])->name('atv');
+    Route::get('/mine',[HomeController::class,'mine'])->name('mine');
+    Route::get('/cost',[HomeController::class,'cost'])->name('cost');
+    Route::get('/port',[HomeController::class,'port'])->name('port');
+    Route::get('/layout',[HomeController::class,'layout'])->name('layout');
+    Route::get('/buyer',[HomeController::class,'buyer'])->name('buyer');
+    Route::get('/kbkaudit',[HomeController::class,'kbkaudit'])->name('kbkaudit');
+    Route::get('/ozindoaudit',[HomeController::class,'ozindoaudit'])->name('ozindoaudit');
+    Route::get('/consti',[HomeController::class,'consti'])->name('consti');
 
 
     Route::get('/user',[HomeController::class,'user'])->name('user');

@@ -21,13 +21,9 @@
           </div>
         </div>
         <div class="card-body">
-        <iframe src="{{ asset('lte/docs/assets/img/PTKBK - Tenement Report (Final Version - 2403) (OSP 0104).pdf') }}" style="width:1200px; height:1500px;" frameborder="0"></iframe>
+        <iframe src="{{ asset('lte/docs/assets/img/PTKBK - Tenement Report (Final Version - 2403) (OSP 0104).pdf') }}" style="width:100%; height:700px;" frameborder="0"></iframe>
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
-        <!-- /.card-footer-->
       </div>
       <!-- /.card -->
 
