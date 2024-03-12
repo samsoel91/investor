@@ -49,6 +49,8 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/kbkaudit',[HomeController::class,'kbkaudit'])->name('kbkaudit');
     Route::get('/ozindoaudit',[HomeController::class,'ozindoaudit'])->name('ozindoaudit');
     Route::get('/consti',[HomeController::class,'consti'])->name('consti');
+    Route::get('/esg',[HomeController::class,'esg'])->name('esg');
+    Route::get('/miningpermit',[HomeController::class,'miningpermit'])->name('miningpermit');
 
 
     Route::get('/user',[HomeController::class,'user'])->name('user');

@@ -20,7 +20,7 @@
         </div>
         <section class="content">
         <div class="card-body">
-        <iframe src="{{ asset('lte/dist/img/file/Mine Study.pdf') }}" style="width:100%; height:700px;" frameborder="0"></iframe>
+        <iframe src="{{ asset('lte/docs/assets/img/Mine Study.pdf') }}#toolbar=0" style="width:100%; height:700px;" frameborder="0"></iframe>
         </div>
         </section>
       </div>

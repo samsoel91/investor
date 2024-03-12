@@ -88,7 +88,7 @@
     <!-- Brand Logo -->
     <a href="{{ route('admin.dashboard') }}" class="brand-link">
       <img src="{{ asset('lte/dist/img/logo-v1.png') }}" alt="KBK Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">PT KBK </span>
+      <span class="brand-text font-weight-light">PT KBK</span>
     </a>
 
     <!-- Sidebar -->
@@ -239,13 +239,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2F03%2E%20KBK%20PERMITS%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private&ga=1" target="_blank"class="nav-link">
+                <a href="{{ route('admin.miningpermit')}}"class="nav-link">
                   <i class="far fa-circle nav-icon text-warning"></i>
                   <p>Mining Permit</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FESG%20CSR%20PT%20Kaltara%20Batu%20Konstruksi%20%28EN%29%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private&ga=1" target="_blank"class="nav-link">
+              <a href="{{ route('admin.esg') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-warning"></i>
                   <p>ESG-CSR 2021-2022</p>
                 </a>

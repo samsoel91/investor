@@ -9,11 +9,19 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Daily_site;
+use App\Models\Daily_safety;
+use App\Models\Sales_report;
+use App\Models\Shareholder;
 
 class HomeController extends Controller
 {
     public function dashboard(){
-        return view('dashboard');
+        $data['getDaily_site'] = Daily_site::count();
+        $data['getDaily_safety'] = Daily_safety::count();
+        $data['getSalesCount'] = Sales_report::count();
+        $data['getShareholderCount'] = Shareholder::count();
+        return view('dashboard', $data);
     }
 
     public function salesreport(){
@@ -145,5 +153,13 @@ class HomeController extends Controller
 
     public function consti(){
         return view('consti');
+    }
+
+    public function esg(){
+        return view('esg');
+    }
+
+    public function miningpermit(){
+        return view('miningpermit');
     }
 }

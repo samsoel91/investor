@@ -29,7 +29,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>112</h3>
+                <h3>{{ !empty($getDaily_site)? $getDaily_site : '0'}}</h3>
                 <p>Site Report</p>
               </div>
               <a href="{{ route('admin.dailysite')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
@@ -40,7 +40,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53</h3>
+              <h3>{{ !empty($getDaily_safety)? $getDaily_safety : '0'}}</h3>
                 <p>E.S.G report</p>
               </div>
               <a href="{{ route('admin.dailysafety')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
@@ -51,7 +51,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+              <h3>{{ !empty($getSalesCount)? $getSalesCount : '0'}}</h3>
                 <p>Sales Report</p>
               </div>
               <a href="{{ route('admin.salesreport')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
@@ -62,10 +62,10 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
-                <p>Document</p>
+              <h3>{{ !empty($getShareholderCount)? $getShareholderCount : '0'}}</h3>
+                <p>Shareholder Report</p>
               </div>
-              <a href="{{ route('admin.document') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.shareholder') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>

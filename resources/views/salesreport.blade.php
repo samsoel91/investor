@@ -44,6 +44,7 @@
                       <td>{{ $d->prepared }}</td>
                       <td>{{ $d->approved }}</td>
                       <td>
+                        <a href="{{ asset('storage/doc-salesreport/'.$d->file)}}#toolbar=0" class="btn btn-primary" target="_blank"><i class="fas fa-eye">View</i></a>
                         <button id="mymodal{{ $k }}" class="btn btn-primary" data-toggle="modal" data-target="#mymodal{{ $k }}"><i class="fas fa-eye"></i></button>
                         <a data-toggle="modal" data-target="#modal-delete{{ $d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                       </td>
