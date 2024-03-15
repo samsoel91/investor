@@ -43,6 +43,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth'], 'as' => 'admin.'], f
     Route::get('/atv',[HomeController::class,'atv'])->name('atv');
     Route::get('/mine',[HomeController::class,'mine'])->name('mine');
     Route::get('/cost',[HomeController::class,'cost'])->name('cost');
+    Route::get('/block',[HomeController::class,'block'])->name('block');
     Route::get('/port',[HomeController::class,'port'])->name('port');
     Route::get('/layout',[HomeController::class,'layout'])->name('layout');
     Route::get('/buyer',[HomeController::class,'buyer'])->name('buyer');

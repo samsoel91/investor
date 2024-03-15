@@ -34,14 +34,14 @@
                       <td>1</td>
                       <td>Auditor Report 2019-2018 Final</td>
                       <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20AUDITED%20FINANCIALS%2FAuditor%20Report%202019%2D2018%20Final%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20AUDITED%20FINANCIALS" target="_blank" class="btn btn-primary fas fa-eye">
+                      <a href="https://drive.google.com/file/d/1JSD6N-Qd6DtmdMfgu-EwH24IppIPj95J/preview" target="_blank" class="btn btn-primary fas fa-eye">
                       </td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Auditor Report 2020-2019 Final</td>
                       <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20AUDITED%20FINANCIALS%2FAuditor%20Report%202020%2D2019%20Final%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20AUDITED%20FINANCIALS" target="_blank" class="btn btn-primary fas fa-eye">
+                      <a href="https://drive.google.com/file/d/1iXpQOuyZwZc1GqaHoQMla0JNhY_ju0ci/preview" target="_blank" class="btn btn-primary fas fa-eye">
                       </td>
                     </tr>
                   </tbody>

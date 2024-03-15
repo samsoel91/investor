@@ -20,7 +20,7 @@
         </div>
         <section class="content">
         <div class="card-body">
-        <iframe src="{{ asset('lte/docs/assets/img/minepermit.pdf') }}#toolbar=0" style="width:100%; height:700px;" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/1BYbUVPbfA9OepAAYIAY-JKfGg52GI5iU/preview" style="width:100%; height:480px;"></iframe>
         </div>
         </section>
       </div>

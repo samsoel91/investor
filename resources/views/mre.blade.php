@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="card-body">
-        <iframe src="{{ asset('lte/dist/img/file/U7285 KBK MRE 2021_v1.0.pdf') }}#toolbar=0" style="width:100%; height:700px;" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/19cMRcuRJpbL24rtOBP5txRMrtjX5NMjB/preview" width="100%" height="480" allow="autoplay"></iframe>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">

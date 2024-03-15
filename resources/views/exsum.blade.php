@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="card-body">
-        <iframe src="{{ asset('lte/docs/assets/img/KBK20Summary20(Equity202023.pdf') }}#toolbar=0" style="width:100%; height:700px;" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/1ntvIXJRbMSI7mmR_ay3-VsMkFfYoHTLP/preview" width="100%" height="480" allow="autoplay"></iframe>
         </div>
         <!-- /.card-body -->
       </div>

@@ -32,30 +32,30 @@
                   <tbody>
                   <tr>
                       <td>1</td>
-                      <td>08. PKR PT Kaltara Batu Konstruksi No. 04</td>
-                      <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION%2F08%2E%20PKR%20PT%20Kaltara%20Batu%20Konstruksi%20No%2E%2004%20%282%29%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION" target="_blank" class="btn btn-primary fas fa-eye">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
                       <td>08. SP Perubahan Data PR. KBK</td>
                       <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION%2F08%2E%20SP%20Perubahan%20Data%20PR%2E%20KBK%20%282%29%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION" target="_blank" class="btn btn-primary fas fa-eye">
+                      <a href="https://drive.google.com/file/d/1y-2UH-Z1YviwtvzKXgsRW23VYl6Va0EI/preview" target="_blank" class="btn btn-primary fas fa-eye">
+                      </td>
+                    </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>08. PKR PT Kaltara Batu Konstruksi No. 04</td>
+                      <td>
+                      <a href="https://drive.google.com/file/d/1Z0jLCArW9FIHrjRKGPFvIcvjlvZh6Q6s/preview" target="_blank" class="btn btn-primary fas fa-eye">
                       </td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>10. PKR PT. Kaltara Batu Konstruksi No. 01 Tgl. 6 Maret 2024</td>
+                      <td>10. SP PAD PT. Kaltara Batu Konstruksi akta no. 01 tgl. 6 Maret 2024</td>
                       <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION%2F10%2E%20PKR%20PT%2E%20Kaltara%20Batu%20Konstruksi%20No%2E%2001%20Tgl%2E%206%20Maret%202024%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION" target="_blank" class="btn btn-primary fas fa-eye">
+                      <a href="https://drive.google.com/file/d/1KviNxBNx6J6Ka0vpUZ6yyO_OntJ2iHTB/preview" target="_blank" class="btn btn-primary fas fa-eye">
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td>10. SP PAD PT. Kaltara Batu Konstruksi akta no. 01 tgl. 6 Maret 2024</td>
+                      <td>10. PKR PT. Kaltara Batu Konstruksi No. 01 Tgl. 6 Maret 2024</td>
                       <td>
-                      <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION%2F10%2E%20SP%20PAD%20PT%2E%20Kaltara%20Batu%20Konstruksi%20akta%20no%2E%2001%20tgl%2E%206%20Maret%202024%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FKBK%20CONSTITUTION" target="_blank" class="btn btn-primary fas fa-eye">
+                      <a href="https://drive.google.com/file/d/1o35GuDj8gG69OANq9XK2cuVrcXQFn8J2/preview" target="_blank" class="btn btn-primary fas fa-eye">
                       </td>
                     </tr>
                   </tbody>

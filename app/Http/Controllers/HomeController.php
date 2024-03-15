@@ -131,6 +131,10 @@ class HomeController extends Controller
         return view('cost');
     }
 
+    public function block(){
+        return view('block');
+    }
+
     public function port(){
         return view('port');
     }

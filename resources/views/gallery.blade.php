@@ -31,37 +31,37 @@
                     </a>
                   </div>
                   <div class="col-sm-4">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 2 - black" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/1.jpg') }}" class="img-fluid mb-2" alt="black sample"/>
                     </a>
                   </div>
                   <div class="col-sm-4">
-                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 3 - red" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/3.jpg') }}" class="img-fluid mb-2" alt="red sample"/>
                     </a>
                   </div>
                   <div class="col-sm-6">
-                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=9" data-toggle="lightbox" data-title="sample 9 - red" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 9 - red" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/4.jpg') }}" class="img-fluid mb-2" alt="red sample"/>
                     </a>
                   </div>
                   <div class="col-sm-6">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 5 - black" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/5.jpg') }}" class="img-fluid mb-2" alt="black sample"/>
                     </a>
                   </div>
                   <div class="col-sm-4">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 6 - white" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/6.jpg') }}" class="img-fluid mb-2" alt="white sample"/>
                     </a>
                   </div>
                   <div class="col-sm-4">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 7 - white" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/7.jpg') }}" class="img-fluid mb-2" alt="white sample"/>
                     </a>
                   </div>
                   <div class="col-sm-4">
-                    <a href="" data-toggle="lightbox" data-title="sample 8 - black" data-gallery="gallery">
+                    <a href="#" data-toggle="lightbox" data-title="sample 8 - black" data-gallery="gallery">
                       <img src="{{ asset('lte/docs/assets/img/8.jpg') }}" class="img-fluid mb-2" alt="black sample"/>
                     </a>
                   </div>

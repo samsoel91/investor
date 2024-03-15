@@ -215,7 +215,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="https://peakglobalid-my.sharepoint.com/personal/samsul_arifin_peakglobal_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FCost%20Model%2FPIT%20DESIGN%5F24082021%5FSRK%5FOPTI%5FMODEL%5FIND%5FINF%2Epdf&parent=%2Fpersonal%2Fsamsul%5Farifin%5Fpeakglobal%5Fcom%2FDocuments%2FKBK%20DATA%20ROOM%2FData%20Room%20KBK%20Web%20Private%2FCost%20Model" target="_blank"class="nav-link">
+              <a href="{{ route('admin.block') }}" class="nav-link">
                   <i class="far fa-circle nav-icon text-warning"></i>
                   <p>Block Model</p>
                 </a>

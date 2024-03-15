@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="card-body">
-        <iframe src="{{ asset('lte/docs/assets/img/ESG CSR PT Kaltara Batu Konstruksi (EN).pdf') }}#toolbar=0" style="width:100%; height:700px;" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/1-A6IcxBNYB2XVxBr966pMTYn-UHywPPI/preview" style="width:100%; height:480px;"></iframe>
         </div>
         <!-- /.card-body -->
       </div>
